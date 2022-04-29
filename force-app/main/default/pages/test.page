@@ -1,0 +1,4 @@
+<apex:page>
+  Your name is : <b>{!$User.LastName}</b><br/>
+  <apex:image url="https://dnsk.jp/wp/wp-content/uploads/2018/05/blog_01.jpg" height="300" width="50%"/>
+</apex:page>
