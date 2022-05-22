@@ -1,14 +1,14 @@
 <template>
-    <lightning-card title="支出状況" icon-name="standard:partner_marking_budget">
+    <lightning-card title="支出状況" icon-name="standard:partner_marketing_budget">
 
     <!-- lightning-layout と lightning-layout-item 基本コンポーネントで -->
     <!-- グリッドとパディング、アライメントを設定 -->
-        <lightning-layout virticcal-align="center">
+        <lightning-layout vertical-align="center">
             <lightning-layout-item padding="around-small">
                 ¥{totalExpense}
             </lightning-layout-item>
 
-            <lightning-layout-item padding="around-small" flexbility="auto, grow">
+            <lightning-layout-item padding="around-small" flexibility="auto, grow">
                 <lightning-progress-bar value={ratio} size="large" variant="circular"></lightning-progress-bar>
             </lightning-layout-item>
 
