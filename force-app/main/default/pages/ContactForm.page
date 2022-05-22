@@ -7,10 +7,10 @@
     <apex:slds />
   </head>
   <body>
-    <apex:form>
+    <apex:form >
       <apex:pageBlock title="New Contact">
         <!-- Button -->
-        <apex:pageBlockButtons>
+        <apex:pageBlockButtons >
           <apex:commandButton action="{!save}" value="Save" />
         </apex:pageBlockButtons>
         <!-- Input form -->

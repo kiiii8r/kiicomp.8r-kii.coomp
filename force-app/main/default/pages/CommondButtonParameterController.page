@@ -1,0 +1,11 @@
+<apex:page Controller="CommondButtonParameterController">
+    <apex:sectionHeader title="Horce.com" subTitle="サンプル" />
+    <apex:form id="formId">
+        <apex:pageBlock >
+            <apex:commandButton value="Click！" action="{!onClick}" rerender="formId">
+                <apex:param name="parameter" value="クリックされましたー"/>
+            </apex:commandButton>
+        </apex:pageBlock>
+        <apex:pageMessages />
+    </apex:form>
+</apex:page>

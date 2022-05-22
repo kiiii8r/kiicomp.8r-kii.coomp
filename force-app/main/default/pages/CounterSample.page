@@ -1,0 +1,23 @@
+<apex:page id = "SamplePage" controller="CounterPageController">
+    <apex:form>
+        <apex:pageBlock title="SamplePage">
+            <apex:pageBlockButtons>
+                <apex:commandButton value="Click" action="{!doClick}" reRender="SampleSection" oncomplete="pushDoClickState();" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockSection id="SampleSection">
+                <apex:outputText value="{!Counter}"/>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        <apex:actionFunction name="actFuncHistoryBack" action="{!doHistoryBack}" reRender="SampleSection" />
+    </apex:form>
+    <script>
+        window.addEventListener('popstate', function(e) {
+            actFuncHistoryBack();
+        }, false);
+
+        function pushDoClickState() {
+            // 履歴追加
+            history.pushState(null,null,'/result');
+        }
+    </script>
+</apex:page>
