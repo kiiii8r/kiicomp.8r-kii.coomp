@@ -1,7 +1,7 @@
-<apex:page id = "SamplePage" controller="CounterPageController">
-    <apex:form>
+<apex:page id="SamplePage" controller="CounterPageController">
+    <apex:form >
         <apex:pageBlock title="SamplePage">
-            <apex:pageBlockButtons>
+            <apex:pageBlockButtons >
                 <apex:commandButton value="Click" action="{!doClick}" reRender="SampleSection" oncomplete="pushDoClickState();" />
             </apex:pageBlockButtons>
             <apex:pageBlockSection id="SampleSection">

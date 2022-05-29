@@ -1,0 +1,5 @@
+<apex:page >
+    <lightning-card title="支出状況" icon-name="standard:partner_marketing_badget">
+        
+    </lightning-card>
+</apex:page>

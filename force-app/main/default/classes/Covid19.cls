@@ -6,7 +6,7 @@ public class Covid19 {
     private Integer recoveredInArea = 0;
     public static Integer recoveredInCountry = 0;
 
-    // parameterized constructor to set class variables value
+    // クラス変数の値を設定するためのパラメータ化されたコンストラクタ
     public Covid19(Integer recoveredInArea){
         if(recoveredInArea < 0){
             this.recoveredInArea = 0;
@@ -16,13 +16,13 @@ public class Covid19 {
         }
     }
 
-    // increment the count of recoveredInArea and recoveredInCountry by 1
+    // recoveredInArea と recoveredInCountry のカウントを 1 ずつ増加させる。
     public void treatPatient(){
         recoveredInArea++;
         recoveredInCountry++;
     }
 
-    // return the value of recoveredInArea
+    // recoveredInArea の値を返す。
     public Integer getTreated() {
         return recoveredInArea;
     }
