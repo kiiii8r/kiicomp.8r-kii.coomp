@@ -1,1 +1,1 @@
-AccountUtility.viewAnnualRevenue();
+PropertyUtility.newListedProperties();

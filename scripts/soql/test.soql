@@ -1,1 +1,1 @@
-SELECT Contact.Name, priority FROM Case
+SELECT Address__c, Picture__c, Broker__c, FROM Property__c
