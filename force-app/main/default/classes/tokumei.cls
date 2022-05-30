@@ -1,1 +1,4 @@
-NewAccounts.sObjectsInsert(3);
+List <String> tea = new List<String>{'Black Tea', 'Green Tea', 'Chai Tea'};
+for(String t : tea){
+    System.debug('We have ' + t);
+}
