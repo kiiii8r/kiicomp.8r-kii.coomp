@@ -41,4 +41,3 @@ public class  KensakuGamenController{
         return 'WHERE ' + String.join(param, ' AND ');
     }
 }
-  

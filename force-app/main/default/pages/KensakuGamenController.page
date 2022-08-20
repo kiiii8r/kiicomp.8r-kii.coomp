@@ -1,5 +1,5 @@
 <apex:page controller="KensakuGamenController">
-    <apex:form> 
+    <apex:form > 
     <apex:pageBlock title="商品検索" tabStyle="Product2">
     <apex:pageBlockSection columns="1">
         <apex:inputText value="{!conditions.Name}" required="false"/>

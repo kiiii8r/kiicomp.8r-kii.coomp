@@ -6,10 +6,10 @@ class TeaTest {
         // Set<String> orderTea = tea.orderTea();
         // System.debug(orderTea);
         Set<String> tea = Tea.orderTea();
-        Set<String> testTypes = new Set <String>();
-        testTypes.add('Black');
-        testTypes.add('White');
-        testTypes.add('Herbal');
-        System.assertEqual(tea, testTypes, 'エラーです');
+        // Set<String> testTypes = new Set <String>();
+        // testTypes.add('Black');
+        // testTypes.add('White');
+        // testTypes.add('Herbal');
+        // System.assertEqual(orderTea, testTypes, 'エラーです');
     }
 }
