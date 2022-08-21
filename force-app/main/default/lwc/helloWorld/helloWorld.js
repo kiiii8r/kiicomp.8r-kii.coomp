@@ -1,4 +1,4 @@
-import { LightningElement } from 'lwc';
+import { LightningElement, track } from 'lwc';
 export default class HelloWorld extends LightningElement {
   name // 未定義
   age=30;
@@ -16,9 +16,15 @@ export default class HelloWorld extends LightningElement {
     this.title = event.target.value
   }
 
-  address={
+  @track address={
     city: "kanagawa",
-    postcode: 0000000,
+    postcode: "000-0000",
     country: "Japan"
   }
+
+  trackHandler(event){
+    this.address.city = event.target.value
+  }
+
+  // LWCのゲッター
 }
