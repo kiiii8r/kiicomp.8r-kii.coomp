@@ -1,9 +1,6 @@
 <template>
     <lightning-card title="Quiz App In LWC">
         <div class ="slds-m-around_medium">
-            <template if:true={isSubmitted}>
-                <div class={isScoredFull}>あなたのスコアは {myQuestions.length} 問中 {correctAnswers} 問です。</div>
-            </template>
             <form>
                 <template for:each={myQuestions} for:item="quiz">
                     <div key={quiz.id} class ="slds-m-bottom_medium">
@@ -40,6 +37,9 @@
                 class="slds-m-around_small"
                 onclick={resetHandler}></lightning-button>
             </form>
+            <template if:true={isSubmitted}>
+                <div class={isScoredFull}>あなたのスコアは {myQuestions.length} 問中 {correctAnswers} 問です。</div>
+            </template>
         </div>
     </lightning-card>
 </template>
